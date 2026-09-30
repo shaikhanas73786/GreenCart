@@ -1,0 +1,66 @@
+/* ==========================================================================
+   CategoryCard Component Styles
+   ========================================================================== */
+
+.category-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-card);
+}
+
+.category-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: var(--transition-normal);
+}
+
+.category-card:hover .category-icon-wrapper {
+  background-color: var(--primary-color);
+}
+
+.category-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  transition: var(--transition-normal);
+}
+
+.category-card:hover .category-icon {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.category-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.category-count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}

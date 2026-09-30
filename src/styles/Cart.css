@@ -1,0 +1,330 @@
+/* ==========================================================================
+   Cart Page Styles
+   ========================================================================== */
+
+.cart-page {
+  padding: 40px 0 70px;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.cart-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.clear-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #fef2f2;
+  color: var(--accent-red);
+  border: 1px solid #fee2e2;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.clear-cart-btn:hover {
+  background-color: #fee2e2;
+}
+
+/* Empty State */
+.empty-cart-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 70px 20px;
+  text-align: center;
+  max-width: 550px;
+  margin: 30px auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-cart-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.empty-cart-card h2 {
+  font-size: 1.6rem;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.empty-cart-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.start-shopping-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+}
+
+/* Layout Grid */
+.cart-layout-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.cart-items-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cart-back-shopping {
+  margin-top: 20px;
+}
+
+.cart-back-shopping a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.cart-back-shopping a:hover {
+  text-decoration: underline;
+}
+
+/* Summary Card */
+.summary-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 90px;
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.free-shipping-text {
+  color: #16a34a;
+}
+
+.free-shipping-hint {
+  font-size: 0.78rem;
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.discount-row {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.summary-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 16px 0;
+}
+
+.total-row {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.final-total {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+/* Promo Code Form */
+.promo-code-form {
+  margin-bottom: 14px;
+}
+
+.promo-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.promo-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.promo-input {
+  width: 100%;
+  padding: 10px 70px 10px 36px;
+  background-color: var(--bg-soft);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.promo-input:focus {
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+}
+
+.promo-btn {
+  position: absolute;
+  right: 6px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.promo-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.promo-msg {
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+.promo-msg.success {
+  color: #16a34a;
+}
+
+.promo-msg.error {
+  color: var(--accent-red);
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.summary-security {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Success Modal */
+.order-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.order-modal-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.order-modal-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #dcfce7;
+  color: #15803d;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.order-modal-card h2 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.order-modal-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.order-modal-actions button {
+  width: 100%;
+  padding: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cart-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card {
+    position: static;
+  }
+}
